@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntegrationResponse",
+  "type": "object",
+  "required": [
+    "requestId",
+    "status"
+  ],
+  "properties": {
+    "requestId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "completed",
+        "failed",
+        "denied",
+        "pending"
+      ]
+    },
+    "result": {
+      "type": "object"
+    },
+    "callbackRegistered": {
+      "type": "boolean"
+    },
+    "correlationId": {
+      "type": "string"
+    },
+    "error": {
+      "type": "object"
+    }
+  }
+}

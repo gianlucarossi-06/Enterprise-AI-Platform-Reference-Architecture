@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ToolInvocation",
+  "type": "object",
+  "required": [
+    "invocationId",
+    "toolName",
+    "runId",
+    "inputs"
+  ],
+  "properties": {
+    "invocationId": {
+      "type": "string"
+    },
+    "toolName": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "requested",
+        "running",
+        "succeeded",
+        "failed",
+        "rejected"
+      ]
+    },
+    "connectorIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "correlationId": {
+      "type": "string"
+    }
+  }
+}

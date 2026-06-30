@@ -18,3 +18,7 @@
 - AP-016 Telemetry Correlation by Design
 - AP-017 Immutable Telemetry Retention
 - AP-018 Lifecycle Governance for AI Capabilities
+- AP-019 Tool and Connector Separation
+- AP-020 Integration as a First-Class Service
+- AP-021 Managed Long-Running Workflow State
+- AP-022 MCP as an Optional Integration Protocol

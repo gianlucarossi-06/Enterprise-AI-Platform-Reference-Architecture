@@ -1,0 +1,24 @@
+@startuml
+title Long-Running Workflow Orchestration
+
+participant Orchestrator
+participant Gateway
+participant Executor
+participant Runtime
+participant Approver
+
+Orchestrator -> Gateway: start workflow execution
+Gateway -> Runtime: create workflow state
+Gateway -> Executor: start step 1
+Executor --> Gateway: pending callback
+Gateway --> Orchestrator: async accepted
+
+... later ...
+
+Approver -> Gateway: approval decision
+Gateway -> Runtime: update state
+Runtime --> Gateway: resume enabled
+Gateway -> Executor: resume step
+Executor --> Gateway: completion
+Gateway -> Orchestrator: final result
+@enduml
