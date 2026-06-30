@@ -1,0 +1,18 @@
+@startuml
+title OCI Observability Flow
+
+participant "Orchestrator / Gateway / Executors / Tools" as SRC
+participant "Telemetry Collection Layer" as TCOL
+participant "OCI Logging" as LOG
+participant "OCI Monitoring" as MON
+participant "OCI Audit" as AUD
+participant "Dashboards / SIEM / Analytics" as SINK
+
+SRC -> TCOL : Logs / metrics / traces / audit context
+TCOL -> LOG : Route logs
+TCOL -> MON : Route metrics
+TCOL -> AUD : Route audit events
+LOG -> SINK : Search / analysis
+MON -> SINK : Alarms / charts
+AUD -> SINK : Compliance evidence
+@enduml

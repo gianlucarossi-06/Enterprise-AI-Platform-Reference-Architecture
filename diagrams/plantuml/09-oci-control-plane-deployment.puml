@@ -1,0 +1,24 @@
+@startuml
+title OCI Control Plane Deployment
+
+actor User
+participant "OCI API Gateway" as APIGW
+participant "AI Orchestrator" as ORCH
+participant "AI Capability Registry" as REG
+participant "AI Runtime Service" as RUNTIME
+participant "AI Security Service" as SEC
+participant "AI Observability Service" as OBS
+database "Autonomous Database" as ADB
+participant "OCI Logging / Monitoring" as OCIOBS
+
+User -> APIGW : Invoke platform API
+APIGW -> ORCH : Forward governed request
+ORCH -> REG : Resolve capability
+REG --> ORCH : Candidate implementation
+ORCH -> SEC : Check policy / authZ
+SEC --> ORCH : Decision + scoped token
+ORCH -> RUNTIME : Create / update run state
+RUNTIME -> ADB : Persist context
+ORCH -> OBS : Emit trace + event
+OBS -> OCIOBS : Route telemetry
+@enduml

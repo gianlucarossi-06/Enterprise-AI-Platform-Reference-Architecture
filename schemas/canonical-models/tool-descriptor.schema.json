@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ToolDescriptor",
+  "type": "object",
+  "required": [
+    "toolId",
+    "name",
+    "resourceType"
+  ],
+  "properties": {
+    "toolId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "resourceType": {
+      "type": "string"
+    },
+    "allowedOperations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "securityClassification": {
+      "type": "string"
+    },
+    "endpoint": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Policy Change",
+  "type": "object",
+  "required": [
+    "policyId",
+    "version",
+    "status"
+  ],
+  "properties": {
+    "policyId": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "changeSummary": {
+      "type": "string"
+    }
+  }
+}

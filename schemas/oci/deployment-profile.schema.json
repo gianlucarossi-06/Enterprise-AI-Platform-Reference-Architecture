@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OCI Reference Deployment Profile",
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "identityStrategy",
+    "dataResidency",
+    "deploymentMode"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "identityStrategy": {
+      "type": "string"
+    },
+    "dataResidency": {
+      "type": "string"
+    },
+    "deploymentMode": {
+      "type": "string",
+      "enum": [
+        "oci-native",
+        "hybrid",
+        "dedicated-region",
+        "sovereign",
+        "third-party-models"
+      ]
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

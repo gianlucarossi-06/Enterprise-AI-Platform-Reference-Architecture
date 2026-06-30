@@ -1,0 +1,18 @@
+@startuml
+title Observability Correlation Flow
+actor User
+participant Orchestrator
+participant Gateway
+participant Executor
+participant Tool
+participant Collector
+participant Backend
+
+User -> Orchestrator : request
+Orchestrator -> Gateway : execution request + run ID
+Gateway -> Executor : scoped token + trace context
+Executor -> Tool : tool call + correlation IDs
+Tool -> Collector : telemetry event
+Executor -> Collector : span / log / metric
+Collector -> Backend : export normalized signals
+@enduml

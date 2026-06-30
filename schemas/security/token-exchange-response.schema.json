@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TokenExchangeResponse",
+  "type": "object",
+  "required": [
+    "accessToken",
+    "expiresAt",
+    "audience",
+    "scope"
+  ],
+  "properties": {
+    "accessToken": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "policyDecisionId": {
+      "type": "string"
+    },
+    "delegatedSubject": {
+      "type": "string"
+    }
+  }
+}

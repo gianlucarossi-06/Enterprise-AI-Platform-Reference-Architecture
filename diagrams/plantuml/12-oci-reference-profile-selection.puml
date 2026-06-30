@@ -1,0 +1,13 @@
+@startuml
+title Reference Profile Selection
+
+actor Architect
+participant "Reference Profile Options" as OPT
+participant "Selection Criteria" as CRIT
+participant "OCI Deployment" as DEP
+
+Architect -> OPT : Review profiles
+OPT -> CRIT : Compare residency / regulation / integrations / model choice
+CRIT --> OPT : Recommended profile
+OPT -> DEP : Deploy chosen profile
+@enduml

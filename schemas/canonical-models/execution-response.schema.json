@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExecutionResponse",
+  "type": "object",
+  "required": [
+    "runId",
+    "status"
+  ],
+  "properties": {
+    "runId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "accepted",
+        "running",
+        "completed",
+        "failed",
+        "denied"
+      ]
+    },
+    "result": {
+      "type": "object"
+    },
+    "error": {
+      "type": "object"
+    },
+    "telemetryRef": {
+      "type": "string"
+    }
+  }
+}

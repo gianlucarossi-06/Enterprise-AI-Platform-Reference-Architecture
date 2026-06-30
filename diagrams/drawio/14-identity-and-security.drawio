@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-06-29T00:00:00.000Z" agent="OpenAI" version="24.7.17">
+  <diagram id="diagram-1" name="Identity and Security">
+    <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1420" pageHeight="330" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="User" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="120" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="IAM / Identity Domains" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="200" y="60" width="180" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="AI Orchestrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="430" y="60" width="160" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="AI Security Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="640" y="60" width="160" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="AI Agent Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="850" y="60" width="160" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Agent Executor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="60" width="140" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Tool Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="60" width="120" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="OCI Vault" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="470" y="180" width="140" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="OCI Audit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="650" y="180" width="140" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Enterprise Resource" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="850" y="180" width="180" height="55" as="geometry"/>
+        </mxCell>
+        <mxCell id="100" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="101" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="102" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="104" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="105" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="106" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="5" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="107" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="5" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="108" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="8" target="11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

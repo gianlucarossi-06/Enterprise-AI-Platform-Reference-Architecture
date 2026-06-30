@@ -1,0 +1,13 @@
+@startuml
+title Tool and Resource Access
+participant Executor
+participant Tool
+participant DB as Database
+participant API
+Executor -> Tool: invoke
+Tool -> Database: query with constraints
+Database --> Tool: rows
+Tool -> API: optional API call
+API --> Tool: response
+Tool --> Executor: normalized result
+@enduml

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuthorizationRequest",
+  "type": "object",
+  "required": [
+    "subject",
+    "action",
+    "resource"
+  ],
+  "properties": {
+    "subject": {
+      "type": "object"
+    },
+    "action": {
+      "type": "string"
+    },
+    "resource": {
+      "type": "string"
+    },
+    "context": {
+      "type": "object"
+    },
+    "tenantId": {
+      "type": "string"
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "toolId": {
+      "type": "string"
+    }
+  }
+}

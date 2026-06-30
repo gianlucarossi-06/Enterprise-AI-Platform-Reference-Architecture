@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DelegatedIdentity",
+  "type": "object",
+  "required": [
+    "subject",
+    "tenantId",
+    "audience",
+    "expiresAt",
+    "policyDecisionId"
+  ],
+  "properties": {
+    "subject": {
+      "type": "string"
+    },
+    "tenantId": {
+      "type": "string"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "approvalStatus": {
+      "type": "string"
+    },
+    "dataClassification": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "issuedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "policyDecisionId": {
+      "type": "string"
+    },
+    "traceId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    }
+  }
+}

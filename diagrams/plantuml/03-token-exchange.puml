@@ -1,0 +1,16 @@
+@startuml
+title Token Exchange
+actor User
+participant IdP
+participant Orchestrator
+participant Gateway
+participant Executor
+User -> IdP: authenticate
+IdP --> User: user token
+User -> Orchestrator: submit request
+Orchestrator -> Gateway: request with context
+Gateway -> IdP: token exchange
+IdP --> Gateway: scoped execution token
+Gateway -> Executor: scoped agent token
+Executor --> Gateway: agent output
+@enduml

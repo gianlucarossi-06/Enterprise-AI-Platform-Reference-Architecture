@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentDescriptor",
+  "type": "object",
+  "required": [
+    "agentId",
+    "name",
+    "capabilityId"
+  ],
+  "properties": {
+    "agentId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "runtime": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "endpoint": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AuthorizationDecision",
+  "type": "object",
+  "required": [
+    "decision",
+    "decisionId",
+    "reason"
+  ],
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "allow",
+        "deny",
+        "allow_with_conditions",
+        "require_approval",
+        "require_step_up"
+      ]
+    },
+    "decisionId": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expiresAt": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

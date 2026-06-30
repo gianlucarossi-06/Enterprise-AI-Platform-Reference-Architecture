@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExecutionContext",
+  "type": "object",
+  "required": [
+    "runId",
+    "taskId",
+    "traceId",
+    "userSubject"
+  ],
+  "properties": {
+    "runId": {
+      "type": "string"
+    },
+    "taskId": {
+      "type": "string"
+    },
+    "traceId": {
+      "type": "string"
+    },
+    "userSubject": {
+      "type": "string"
+    },
+    "tenantId": {
+      "type": "string"
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "policyDecisionId": {
+      "type": "string"
+    },
+    "dataClassification": {
+      "type": "string"
+    },
+    "approvalStatus": {
+      "type": "string"
+    }
+  }
+}

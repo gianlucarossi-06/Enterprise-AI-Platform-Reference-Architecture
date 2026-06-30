@@ -1,0 +1,25 @@
+    @startuml
+    title Delegated Identity and Token Exchange
+    skinparam backgroundColor transparent
+    skinparam shadowing false
+    skinparam sequenceMessageAlign center
+    skinparam defaultTextAlignment center
+
+participant "User Token" as U
+participant "Orchestration Token" as O
+participant "Gateway Token" as G
+participant "Executor Token" as E
+participant "Tool Token" as T
+participant "Resource Token" as R
+
+U -> O : exchange / down-scope
+O -> G : exchange / down-scope
+G -> E : exchange / down-scope
+E -> T : exchange / down-scope
+T -> R : exchange / down-scope
+note over U,R
+Each token is short-lived, audience-restricted,
+and linked to a policy decision identifier.
+end note
+
+    @enduml

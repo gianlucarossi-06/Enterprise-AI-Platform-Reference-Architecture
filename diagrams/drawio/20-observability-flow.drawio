@@ -1,0 +1,21 @@
+<mxfile host="app.diagrams.net" modified="2026-02-17T00:00:00.000Z" agent="OpenAI" version="22.1.0" type="device">
+  <diagram id="obs-flow" name="Telemetry Flow">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Orchestrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#666666;fontSize=12;" vertex="1" parent="1"><mxGeometry x="100" y="90" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="3" value="Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#666666;fontSize=12;" vertex="1" parent="1"><mxGeometry x="350" y="90" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="4" value="Executor" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#666666;fontSize=12;" vertex="1" parent="1"><mxGeometry x="600" y="90" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="5" value="Tool Adapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#666666;fontSize=12;" vertex="1" parent="1"><mxGeometry x="850" y="90" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="6" value="OpenTelemetry Collector" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#666666;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1100" y="90" width="260" height="70" as="geometry"/></mxCell>
+        <mxCell id="7" value="OCI Logging / Monitoring / APM" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;" vertex="1" parent="1"><mxGeometry x="1100" y="230" width="260" height="80" as="geometry"/></mxCell>
+        <mxCell id="8" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="2" target="3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="9" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="3" target="4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="10" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="4" target="5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="11" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="5" target="6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="12" style="endArrow=block;html=1;strokeWidth=2;" edge="1" parent="1" source="6" target="7"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

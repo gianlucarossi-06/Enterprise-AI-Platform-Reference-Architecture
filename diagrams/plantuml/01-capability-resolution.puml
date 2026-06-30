@@ -1,0 +1,16 @@
+@startuml
+title Capability Resolution
+actor User
+participant Orchestrator
+participant Registry
+participant Gateway
+participant Executor
+User -> Orchestrator: request capability
+Orchestrator -> Registry: resolve capability
+Registry --> Orchestrator: implementation candidates
+Orchestrator -> Gateway: execution request
+Gateway -> Executor: invoke implementation
+Executor --> Gateway: response
+Gateway --> Orchestrator: normalized result
+Orchestrator --> User: answer
+@enduml

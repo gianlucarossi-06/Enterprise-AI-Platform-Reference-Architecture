@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SecurityAuditEvent",
+  "type": "object",
+  "required": [
+    "eventId",
+    "eventType",
+    "timestamp",
+    "subject",
+    "decision"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "tenantId": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    },
+    "resource": {
+      "type": "string"
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "toolId": {
+      "type": "string"
+    },
+    "policyDecisionId": {
+      "type": "string"
+    },
+    "traceId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@startuml
+title Identity and Security Flow
+
+actor User
+participant "IAM / Identity Domains" as IAM
+participant "AI Orchestrator" as ORCH
+participant "AI Security Service" as SEC
+participant "AI Agent Gateway" as GW
+participant "Agent Executor" as EX
+participant "Tool Adapter" as TOOL
+database "Enterprise Resource" as RES
+participant "OCI Vault" as VAULT
+participant "OCI Audit" as AUDIT
+
+User -> IAM : Authenticate
+IAM --> User : ID token / SSO session
+User -> ORCH : Submit request with identity context
+ORCH -> SEC : Evaluate policy
+SEC -> VAULT : Retrieve secrets / keys
+SEC --> ORCH : Authorization decision
+ORCH -> GW : Delegated execution request
+GW -> EX : Scoped agent invocation
+EX -> TOOL : Tool call with narrowed scope
+TOOL -> RES : Access allowed resource
+RES --> TOOL : Result
+TOOL -> AUDIT : Emit access event
+EX -> AUDIT : Emit execution event
+ORCH -> AUDIT : Emit orchestration event
+@enduml

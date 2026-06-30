@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExecutionRequest",
+  "type": "object",
+  "required": [
+    "runId",
+    "taskId",
+    "capabilityId",
+    "user",
+    "context"
+  ],
+  "properties": {
+    "runId": {
+      "type": "string"
+    },
+    "taskId": {
+      "type": "string"
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "user": {
+      "$ref": "#/$defs/UserIdentity"
+    },
+    "context": {
+      "$ref": "#/$defs/ExecutionContext"
+    },
+    "constraints": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "UserIdentity": {
+      "type": "object",
+      "required": [
+        "subject"
+      ],
+      "properties": {
+        "subject": {
+          "type": "string"
+        },
+        "tenantId": {
+          "type": "string"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ExecutionContext": {
+      "type": "object",
+      "required": [
+        "traceId",
+        "purpose"
+      ],
+      "properties": {
+        "traceId": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "dataClassification": {
+          "type": "string"
+        },
+        "riskLevel": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

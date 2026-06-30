@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Approval Decision",
+  "type": "object",
+  "required": [
+    "requestId",
+    "decision",
+    "decidedBy"
+  ],
+  "properties": {
+    "requestId": {
+      "type": "string"
+    },
+    "decision": {
+      "type": "string"
+    },
+    "decidedBy": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "comment": {
+      "type": "string"
+    }
+  }
+}

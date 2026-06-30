@@ -1,0 +1,15 @@
+@startuml
+title Governance Approval Flow
+actor Requester
+participant Orchestrator
+participant Governance
+participant Approver
+participant Executor
+
+Requester -> Orchestrator : risky action request
+Orchestrator -> Governance : policy evaluation
+Governance -> Approver : approval needed
+Approver -> Governance : approve / reject
+Governance -> Orchestrator : decision
+Orchestrator -> Executor : proceed or deny
+@enduml

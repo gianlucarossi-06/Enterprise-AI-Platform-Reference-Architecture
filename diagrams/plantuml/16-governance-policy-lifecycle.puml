@@ -1,0 +1,13 @@
+@startuml
+title Policy Lifecycle
+participant Author
+participant Review
+participant Publish
+participant Enforcement
+participant Audit
+
+Author -> Review : policy draft
+Review -> Publish : approved policy
+Publish -> Enforcement : versioned policy
+Enforcement -> Audit : policy decision events
+@enduml

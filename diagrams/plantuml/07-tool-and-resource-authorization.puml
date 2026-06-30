@@ -1,0 +1,32 @@
+    @startuml
+    title Tool and Resource Authorization
+    skinparam backgroundColor transparent
+    skinparam shadowing false
+    skinparam sequenceMessageAlign center
+    skinparam defaultTextAlignment center
+
+actor User
+participant Orchestrator
+participant Gateway
+participant Executor
+participant "Tool Adapter" as Tool
+participant "Database / API" as Resource
+participant PDP
+
+User -> Orchestrator : request capability
+Orchestrator -> PDP : ask if capability allowed
+PDP --> Orchestrator : allow / deny / condition
+Orchestrator -> Gateway : execute
+Gateway -> PDP : validate agent eligibility
+PDP --> Gateway : allow / deny / condition
+Gateway -> Executor : task scope
+Executor -> PDP : validate tool permission
+PDP --> Executor : allow / deny / condition
+Executor -> Tool : tool token
+Tool -> Resource : query / invoke
+Resource --> Tool : controlled result
+Tool --> Executor : response
+Executor --> Gateway : normalized output
+Gateway --> Orchestrator : result
+
+    @enduml

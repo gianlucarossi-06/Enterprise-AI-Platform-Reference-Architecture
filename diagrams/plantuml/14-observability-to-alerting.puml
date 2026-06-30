@@ -1,0 +1,13 @@
+@startuml
+title Observability to Alerting
+participant Collector
+participant Rules
+participant Alerts
+participant Incident
+participant Archive
+
+Collector -> Rules : telemetry stream
+Rules -> Alerts : threshold / anomaly trigger
+Alerts -> Incident : notification
+Collector -> Archive : immutable retention
+@enduml

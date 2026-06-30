@@ -1,0 +1,33 @@
+    @startuml
+    title User Authentication and Request Flow
+    skinparam backgroundColor transparent
+    skinparam shadowing false
+    skinparam sequenceMessageAlign center
+    skinparam defaultTextAlignment center
+
+actor User
+participant "Identity Provider" as IdP
+participant "AI Orchestrator" as Orchestrator
+participant "Policy Decision Point" as PDP
+participant "AI Agent Gateway" as Gateway
+participant "AI Executor" as Executor
+participant "Tool Adapter" as Tool
+participant "Enterprise Resource" as Resource
+
+User -> IdP : Sign in
+IdP --> User : ID token / SSO assertion
+User -> Orchestrator : AI request + token
+Orchestrator -> Orchestrator : Validate identity and create execution context
+Orchestrator -> PDP : Evaluate capability authorization
+PDP --> Orchestrator : allow / deny / conditions
+Orchestrator -> Gateway : Execution request + delegated identity
+Gateway -> Executor : Scoped execution token
+Executor -> Tool : Scoped tool token
+Tool -> Resource : Authorized resource access
+Resource --> Tool : Result
+Tool --> Executor : Tool response
+Executor --> Gateway : Execution result
+Gateway --> Orchestrator : Normalized result
+Orchestrator --> User : Final answer
+
+    @enduml

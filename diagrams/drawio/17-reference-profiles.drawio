@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-06-29T00:00:00.000Z" agent="OpenAI" version="24.7.17">
+  <diagram id="diagram-1" name="Reference Profiles">
+    <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="340" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="OCI Native" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="180" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="OCI + External Models" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="260" y="60" width="200" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="OCI Hybrid" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="500" y="60" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="OCI Sovereign / Dedicated" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="700" y="60" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Selection Criteria\nResidency • Regulation • Integrations • Model Choice" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="520" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="100" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="101" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="3" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="102" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="4" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

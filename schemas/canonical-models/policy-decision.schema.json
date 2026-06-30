@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PolicyDecision",
+  "type": "object",
+  "required": [
+    "decisionId",
+    "effect",
+    "subject",
+    "resource"
+  ],
+  "properties": {
+    "decisionId": {
+      "type": "string"
+    },
+    "effect": {
+      "type": "string",
+      "enum": [
+        "permit",
+        "deny"
+      ]
+    },
+    "subject": {
+      "type": "object"
+    },
+    "resource": {
+      "type": "object"
+    },
+    "action": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

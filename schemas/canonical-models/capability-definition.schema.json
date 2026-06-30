@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CapabilityDefinition",
+  "type": "object",
+  "required": [
+    "capabilityId",
+    "name",
+    "domain",
+    "status"
+  ],
+  "properties": {
+    "capabilityId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "implementations": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "owner": {
+      "type": "string"
+    },
+    "trustLevel": {
+      "type": "string"
+    }
+  }
+}

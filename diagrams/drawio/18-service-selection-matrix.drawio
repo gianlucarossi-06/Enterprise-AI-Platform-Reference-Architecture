@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<mxfile host="app.diagrams.net" modified="2026-06-29T00:00:00.000Z" agent="OpenAI" version="24.7.17">
+  <diagram id="diagram-1" name="Service Selection Matrix">
+    <mxGraphModel dx="1422" dy="832" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="780" pageHeight="360" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Logical Capability" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Preferred OCI Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="250" y="30" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Alternative / Extension" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="500" y="30" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Identity" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="IAM with Identity Domains" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Enterprise federation source" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="500" y="120" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="190" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="OCI Logging" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="250" y="190" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="External log analytics sink" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="500" y="190" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Metrics / Alarms" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="180" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="OCI Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="250" y="260" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="External observability stack" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="500" y="260" width="220" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="100" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="101" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="3" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="102" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="5" target="6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="103" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="104" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="105" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="9" target="10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="106" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="11" target="12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="107" value="" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;" edge="1" parent="1" source="12" target="13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="sourcePoint"/>
+            <mxPoint as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

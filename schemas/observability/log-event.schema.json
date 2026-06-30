@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Log Event",
+  "type": "object",
+  "required": [
+    "timestamp",
+    "level",
+    "message",
+    "service"
+  ],
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "level": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "context": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

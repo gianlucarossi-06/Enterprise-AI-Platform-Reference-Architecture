@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Governance",
+  "type": "object",
+  "required": [
+    "promptId",
+    "status",
+    "owner"
+  ],
+  "properties": {
+    "promptId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "approvedBy": {
+      "type": "string"
+    }
+  }
+}

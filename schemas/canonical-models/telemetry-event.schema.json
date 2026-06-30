@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TelemetryEvent",
+  "type": "object",
+  "required": [
+    "eventId",
+    "timestamp",
+    "traceId",
+    "spanId",
+    "signalType"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "traceId": {
+      "type": "string"
+    },
+    "spanId": {
+      "type": "string"
+    },
+    "signalType": {
+      "type": "string",
+      "enum": [
+        "trace",
+        "metric",
+        "log",
+        "audit"
+      ]
+    },
+    "attributes": {
+      "type": "object"
+    }
+  }
+}

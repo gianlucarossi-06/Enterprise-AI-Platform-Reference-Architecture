@@ -1,0 +1,31 @@
+    @startuml
+    title Trust Boundaries and Audit
+    skinparam backgroundColor transparent
+    skinparam shadowing false
+    skinparam sequenceMessageAlign center
+    skinparam defaultTextAlignment center
+
+participant User
+participant Orchestrator
+participant Gateway
+participant Executor
+participant Tool
+participant Resource
+participant Audit
+
+User -> Orchestrator : request
+Orchestrator -> Audit : emit authn/authz event
+Orchestrator -> Gateway : delegated request
+Gateway -> Audit : emit gateway decision
+Gateway -> Executor : scoped token
+Executor -> Audit : emit execution decision
+Executor -> Tool : tool token
+Tool -> Resource : access request
+Resource -> Audit : emit resource access event
+Resource --> Tool : result
+Tool --> Executor : result
+Executor --> Gateway : result
+Gateway --> Orchestrator : result
+Orchestrator -> Audit : emit completion event
+
+    @enduml

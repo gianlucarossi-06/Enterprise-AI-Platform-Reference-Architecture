@@ -1,0 +1,21 @@
+@startuml
+title Identity Propagation
+actor User
+participant Orchestrator
+participant Security
+participant Gateway
+participant Executor
+participant Tool
+participant Resource
+User -> Orchestrator: authenticated request
+Orchestrator -> Security: policy check
+Security --> Orchestrator: execution context
+Orchestrator -> Gateway: delegated request
+Gateway -> Security: token exchange
+Security --> Gateway: scoped token
+Gateway -> Executor: delegated identity
+Executor -> Tool: tool-scoped invocation
+Tool -> Resource: resource access
+Resource --> Tool: data/result
+Tool --> Executor: normalized output
+@enduml

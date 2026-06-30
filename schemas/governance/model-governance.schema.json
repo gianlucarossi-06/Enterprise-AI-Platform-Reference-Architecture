@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model Governance",
+  "type": "object",
+  "required": [
+    "modelId",
+    "status",
+    "owner"
+  ],
+  "properties": {
+    "modelId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "evaluationDate": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TokenExchangeRequest",
+  "type": "object",
+  "required": [
+    "subjectToken",
+    "audience",
+    "scope"
+  ],
+  "properties": {
+    "subjectToken": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "requestedCapabilityId": {
+      "type": "string"
+    },
+    "requestedToolId": {
+      "type": "string"
+    },
+    "tenantId": {
+      "type": "string"
+    },
+    "policyDecisionId": {
+      "type": "string"
+    }
+  }
+}
