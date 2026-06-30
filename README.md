@@ -6,9 +6,11 @@ This repository contains the working reference architecture for a secure, govern
 
 - `docs/01-Architecture-Foundation` - architecture vision, principles, logical model, AI Platform Kernel
 - `docs/02-Security-Architecture` - authentication, authorization, identity propagation, token exchange
+- `docs/03-Canonical-Models` - canonical platform entities, contracts, and schema publication
 - `docs/04-Observability` - centralized telemetry, logging, tracing, lineage, alerting, audit correlation
 - `docs/05-OCI-Reference-Implementation` - OCI mapping and physical implementation guidance
 - `docs/06-Governance` - AI governance, lifecycle management, approvals, model and prompt governance
+- `docs/07-Implementation-Patterns` - orchestration, runtime, integration, and deployment automation patterns
 - `adr` - architecture decision records
 - `schemas` - canonical JSON schemas
 - `diagrams/drawio` - editable diagrams
@@ -36,7 +38,7 @@ The execution plane contains:
 - Tool Adapters
 - AI Integration Service
 
-The platform uses centralized observability and cross-cutting governance so that telemetry, audit, policies, lifecycle controls, and approvals are managed consistently across all agents and tools.
+The platform uses centralized observability, cross-cutting governance, and canonical models so that telemetry, audit, policies, lifecycle controls, approvals, and implementation patterns are managed consistently across all agents and tools.
 
 The kernel provides shared enterprise services and keeps orchestration logic stateless and replaceable.
 

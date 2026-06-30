@@ -1,0 +1,11 @@
+@startuml
+title Deployment Automation Flow
+start
+:Update Markdown / schemas / diagrams;
+:Validate contracts;
+:Generate docs and site;
+:Run policy checks;
+:Promote to environment;
+:Capture release evidence;
+stop
+@enduml

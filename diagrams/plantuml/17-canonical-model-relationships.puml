@@ -1,0 +1,14 @@
+@startuml
+title Canonical Model Relationships
+class BusinessCapability
+class AICapability
+class AgentImplementation
+class Tool
+class Connector
+class EnterpriseResource
+BusinessCapability --> AICapability
+AICapability --> AgentImplementation
+AgentImplementation --> Tool
+Tool --> Connector
+Connector --> EnterpriseResource
+@enduml

@@ -1,0 +1,22 @@
+name: docs-build
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - 'schemas/**'
+      - 'diagrams/**'
+      - 'adr/**'
+      - 'README.md'
+      - 'ROADMAP.md'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate markdown placeholder
+        run: echo "Validate docs"
+      - name: Validate schemas placeholder
+        run: echo "Validate schemas"
