@@ -1,0 +1,29 @@
+@startuml
+title Enterprise Integration and Agent Runtime Flow
+
+actor User
+participant "AI Orchestrator" as Orchestrator
+participant "AI Platform Kernel" as Kernel
+participant "AI Agent Gateway" as Gateway
+participant "Agent Executor" as Executor
+participant "Tool" as Tool
+participant "AI Integration Service" as Integration
+participant "Connector" as Connector
+database "Enterprise Resource" as Resource
+
+User -> Orchestrator: submit request
+Orchestrator -> Kernel: resolve capability / runtime state
+Kernel -> Gateway: execution request
+Gateway -> Executor: route execution
+Executor -> Tool: invoke tool
+Tool -> Integration: integration request
+Integration -> Connector: technical call
+Connector -> Resource: read/write data
+Resource --> Connector: response
+Connector --> Integration: normalized response
+Integration --> Tool: result
+Tool --> Executor: tool result
+Executor --> Gateway: execution response
+Gateway --> Orchestrator: normalized result
+Orchestrator --> User: final answer
+@enduml

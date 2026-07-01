@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IntegrationRequest",
+  "type": "object",
+  "required": [
+    "requestId",
+    "runId",
+    "capabilityId",
+    "tool",
+    "context"
+  ],
+  "properties": {
+    "requestId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "capabilityId": {
+      "type": "string"
+    },
+    "tool": {
+      "$ref": "#/$defs/ToolDescriptor"
+    },
+    "context": {
+      "$ref": "#/$defs/ExecutionContext"
+    },
+    "syncMode": {
+      "type": "string",
+      "enum": [
+        "sync",
+        "async",
+        "event",
+        "workflow"
+      ]
+    },
+    "callback": {
+      "$ref": "#/$defs/CallbackEndpoint"
+    },
+    "constraints": {
+      "type": "object"
+    }
+  },
+  "$defs": {
+    "ToolDescriptor": {
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "connectorType": {
+          "type": "string"
+        }
+      }
+    },
+    "ExecutionContext": {
+      "type": "object",
+      "required": [
+        "traceId",
+        "purpose"
+      ],
+      "properties": {
+        "traceId": {
+          "type": "string"
+        },
+        "purpose": {
+          "type": "string"
+        },
+        "dataClassification": {
+          "type": "string"
+        },
+        "tenantId": {
+          "type": "string"
+        }
+      }
+    },
+    "CallbackEndpoint": {
+      "type": "object",
+      "required": [
+        "type",
+        "target"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "http",
+            "queue",
+            "event"
+          ]
+        },
+        "target": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

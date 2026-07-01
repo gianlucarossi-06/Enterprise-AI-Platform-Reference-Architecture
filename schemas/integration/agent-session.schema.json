@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentSession",
+  "type": "object",
+  "required": [
+    "sessionId",
+    "runId",
+    "agentId",
+    "startedAt"
+  ],
+  "properties": {
+    "sessionId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "agentId": {
+      "type": "string"
+    },
+    "startedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "endedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "sync",
+        "async",
+        "event",
+        "workflow"
+      ]
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

@@ -22,7 +22,7 @@ This repository contains the working reference architecture for a secure, govern
 
 The architecture is capability-oriented and kernel-based:
 
-User -> AI Orchestrator -> AI Platform Kernel -> AI Agent Gateway -> Agent Executors -> Tools -> Enterprise Resources
+User -> AI Orchestrator -> AI Platform Kernel -> AI Agent Gateway -> Agent Executors -> Tools -> Connectors -> Enterprise Resources
 
 The control plane contains:
 - AI Orchestrator
@@ -37,8 +37,9 @@ The execution plane contains:
 - AI Agent Gateway
 - Agent Executors
 - Domain Agents
-- Tool Adapters
 - AI Integration Service
+- Tool Adapters
+- Connectors
 
 The platform uses centralized observability, cross-cutting governance, canonical models, and reproducible operations so that telemetry, audit, policies, lifecycle controls, approvals, deployment automation, and platform engineering are managed consistently across all agents and tools.
 
