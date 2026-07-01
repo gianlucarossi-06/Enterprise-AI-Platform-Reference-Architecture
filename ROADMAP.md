@@ -6,13 +6,14 @@
 - WP-3 OCI Reference Implementation
 - WP-4 Observability
 - WP-5 Governance
-- WP-6 Enterprise Integration and Agent Runtime
 
 ## Current work package
-- WP-7 Canonical Models Publication
+- WP-6 Enterprise Integration and Agent Runtime
 
 ## Next
-- Implementation patterns volume
+- WP-7 Canonical Models and API Contracts
+- WP-8 Implementation Patterns
+- Executive deck outline
 - Deployment automation references
 - Executive deck outline
 - Reference deployment profiles expansion

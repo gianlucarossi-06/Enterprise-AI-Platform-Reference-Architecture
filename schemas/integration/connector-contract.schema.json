@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ConnectorContract",
+  "type": "object",
+  "required": [
+    "connectorId",
+    "name",
+    "type",
+    "version",
+    "endpoint"
+  ],
+  "properties": {
+    "connectorId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "rest",
+        "jdbc",
+        "soap",
+        "file",
+        "stream",
+        "mcp",
+        "sap",
+        "fusion",
+        "custom"
+      ]
+    },
+    "version": {
+      "type": "string"
+    },
+    "endpoint": {
+      "type": "string"
+    },
+    "securityScope": {
+      "type": "string"
+    },
+    "supportedOperations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "telemetry": {
+      "type": "object"
+    }
+  }
+}

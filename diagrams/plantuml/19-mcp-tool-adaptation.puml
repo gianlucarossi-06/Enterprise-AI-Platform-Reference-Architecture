@@ -1,0 +1,18 @@
+@startuml
+title MCP Tool Adaptation
+
+participant Agent
+participant Tool
+participant "MCP Adapter" as MCP
+participant "MCP Server" as Server
+participant "Enterprise Resource" as Resource
+
+Agent -> Tool: request action
+Tool -> MCP: translate to MCP
+MCP -> Server: list resources / call tool
+Server -> Resource: operate on data
+Resource --> Server: result
+Server --> MCP: MCP response
+MCP --> Tool: normalized response
+Tool --> Agent: tool result
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+title AI Agent Gateway Sequence
+
+participant Orchestrator
+participant Gateway
+participant Policy
+participant Executor
+
+Orchestrator -> Gateway: execution request + delegated identity
+Gateway -> Policy: evaluate capability / scope / approval
+Policy --> Gateway: allow / deny / conditions
+alt allowed
+  Gateway -> Executor: hand off execution
+  Executor --> Gateway: response / callback registration
+  Gateway --> Orchestrator: normalized response
+else denied
+  Gateway --> Orchestrator: rejection + reason
+end
+@enduml

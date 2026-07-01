@@ -10,7 +10,7 @@ This repository contains the working reference architecture for a secure, govern
 - `docs/04-Observability` - centralized telemetry, logging, tracing, lineage, alerting, audit correlation
 - `docs/05-OCI-Reference-Implementation` - OCI mapping and physical implementation guidance
 - `docs/06-Governance` - AI governance, lifecycle management, approvals, model and prompt governance
-- `docs/07-Implementation-Patterns` - orchestration, runtime, integration, and deployment automation patterns
+- `docs/07-Enterprise-Integration-and-Agent-Runtime` - agent execution model, AI Agent Gateway, integration service, tool and connector patterns
 - `adr` - architecture decision records
 - `schemas` - canonical JSON schemas
 - `diagrams/drawio` - editable diagrams
@@ -20,7 +20,7 @@ This repository contains the working reference architecture for a secure, govern
 
 The architecture is capability-oriented and kernel-based:
 
-User -> AI Orchestrator -> AI Platform Kernel -> AI Agent Gateway -> Agent Executors -> Tools -> Enterprise Resources
+User -> AI Orchestrator -> AI Platform Kernel -> AI Agent Gateway -> Agent Executors -> Tools -> Connectors -> Enterprise Resources
 
 The control plane contains:
 - AI Orchestrator
@@ -35,8 +35,9 @@ The execution plane contains:
 - AI Agent Gateway
 - Agent Executors
 - Domain Agents
-- Tool Adapters
 - AI Integration Service
+- Tool Adapters
+- Connectors
 
 The platform uses centralized observability, cross-cutting governance, and canonical models so that telemetry, audit, policies, lifecycle controls, approvals, and implementation patterns are managed consistently across all agents and tools.
 
