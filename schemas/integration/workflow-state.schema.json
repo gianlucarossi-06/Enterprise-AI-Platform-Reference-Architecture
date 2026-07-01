@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WorkflowState",
+  "type": "object",
+  "required": [
+    "workflowId",
+    "runId",
+    "status"
+  ],
+  "properties": {
+    "workflowId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "new",
+        "running",
+        "paused",
+        "waiting-approval",
+        "completed",
+        "failed",
+        "compensating"
+      ]
+    },
+    "checkpoints": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "retries": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "approvalState": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CallbackEvent",
+  "type": "object",
+  "required": [
+    "callbackId",
+    "runId",
+    "status",
+    "target"
+  ],
+  "properties": {
+    "callbackId": {
+      "type": "string"
+    },
+    "runId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "registered",
+        "delivered",
+        "failed"
+      ]
+    },
+    "target": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "correlationId": {
+      "type": "string"
+    }
+  }
+}
