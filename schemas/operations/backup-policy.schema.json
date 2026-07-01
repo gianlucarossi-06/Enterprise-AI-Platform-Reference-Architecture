@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/operations/backup-policy.schema.json",
+  "title": "BackupPolicy",
+  "type": "object",
+  "required": [
+    "policyId",
+    "scope",
+    "frequency",
+    "retention"
+  ],
+  "properties": {
+    "policyId": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "frequency": {
+      "type": "string"
+    },
+    "retention": {
+      "type": "string"
+    },
+    "rpo": {
+      "type": "string"
+    },
+    "rto": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

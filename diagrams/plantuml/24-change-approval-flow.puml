@@ -1,0 +1,14 @@
+@startuml
+title Change Approval Flow
+actor Requester
+participant Approval
+participant Policy
+participant Release
+participant Audit
+
+Requester -> Approval: submit change
+Approval -> Policy: evaluate approval criteria
+Policy --> Approval: decision
+Approval -> Release: authorize promotion
+Release -> Audit: record release and approver
+@enduml

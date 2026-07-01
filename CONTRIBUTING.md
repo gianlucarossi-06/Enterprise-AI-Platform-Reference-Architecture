@@ -1,19 +1,21 @@
 # Contributing
 
-This repository is maintained as docs-as-code.
+Please follow these conventions when contributing to the repository.
 
-## Working model
+## General rules
+- Keep the logical architecture vendor-neutral.
+- Use Oracle-style solution document structure for volumes and chapters.
+- Prefer concise, action-oriented writing.
+- Keep diagrams editable (`drawio`, `plantuml`) and avoid image-only sources.
+- Introduce architectural changes through ADRs.
+- Update `README.md` and `ROADMAP.md` when scope changes.
 
-- Open a branch for each work package or change set.
-- Update the relevant Markdown, schema, diagram, or ADR.
-- Keep the logical architecture stable unless an ADR is added.
-- Use the canonical terminology defined in the architecture baseline.
+## File naming
+- Use lower-case, hyphen-separated file names.
+- Prefix ADRs with zero-padded numbers when adding new records.
+- Keep schema files versionable and human-readable.
 
 ## Review expectations
-
-Changes should:
-
-- preserve the capability-oriented model
-- respect the control plane / execution plane separation
-- maintain security, observability, and governance consistency
-- update the roadmap when scope changes
+- Every new capability should describe purpose, inputs, outputs, and security implications.
+- Every operational pattern should describe deployment, monitoring, and recovery expectations.
+- Every OCI mapping should clearly separate logical intent from physical service choice.

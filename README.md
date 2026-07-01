@@ -1,6 +1,6 @@
 # Enterprise AI Platform Reference Architecture
 
-This repository contains the working reference architecture for a secure, governable, observable multi-agent AI platform.
+This repository contains the working reference architecture for a secure, governable, observable, multi-agent AI platform.
 
 ## Contents
 
@@ -10,7 +10,8 @@ This repository contains the working reference architecture for a secure, govern
 - `docs/04-Observability` - centralized telemetry, logging, tracing, lineage, alerting, audit correlation
 - `docs/05-OCI-Reference-Implementation` - OCI mapping and physical implementation guidance
 - `docs/06-Governance` - AI governance, lifecycle management, approvals, model and prompt governance
-- `docs/07-Enterprise-Integration-and-Agent-Runtime` - agent execution model, AI Agent Gateway, integration service, tool and connector patterns
+- `docs/07-Implementation-Patterns` - orchestration, runtime, integration, and deployment automation patterns
+- `docs/08-Operations-and-Platform-Engineering` - day-2 operations, GitOps, CI/CD, resilience, SRE, FinOps
 - `adr` - architecture decision records
 - `schemas` - canonical JSON schemas
 - `diagrams/drawio` - editable diagrams
@@ -39,7 +40,7 @@ The execution plane contains:
 - Tool Adapters
 - Connectors
 
-The platform uses centralized observability, cross-cutting governance, and canonical models so that telemetry, audit, policies, lifecycle controls, approvals, and implementation patterns are managed consistently across all agents and tools.
+The platform uses centralized observability, cross-cutting governance, canonical models, and reproducible operations so that telemetry, audit, policies, lifecycle controls, approvals, deployment automation, and platform engineering are managed consistently across all agents and tools.
 
 The kernel provides shared enterprise services and keeps orchestration logic stateless and replaceable.
 

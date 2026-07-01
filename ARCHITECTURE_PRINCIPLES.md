@@ -1,24 +1,48 @@
 # Architecture Principles
 
-- AP-001 Capability Driven Architecture
-- AP-002 Control Plane / Execution Plane Separation
-- AP-003 Zero Trust Security
-- AP-004 Delegated Identity Propagation
-- AP-005 Policy as Code
-- AP-006 Observability by Design
-- AP-007 Security by Design
-- AP-008 Platform Independence
-- AP-009 Framework Independence
-- AP-010 Cloud Agnostic Logical Architecture
-- AP-011 OCI First Physical Architecture
-- AP-012 Contract First Integration
-- AP-013 Capability-Oriented Orchestration
-- AP-014 Governance as a Cross-Cutting Concern
-- AP-015 Auditability by Design
-- AP-016 Telemetry Correlation by Design
-- AP-017 Immutable Telemetry Retention
-- AP-018 Lifecycle Governance for AI Capabilities
-- AP-019 Tool and Connector Separation
-- AP-020 Integration as a First-Class Service
-- AP-021 Managed Long-Running Workflow State
-- AP-022 MCP as an Optional Integration Protocol
+These principles govern the Enterprise AI Platform Reference Architecture.
+
+## AP-001 Capability Driven Architecture
+The platform orchestrates business capabilities, not specific agent implementations.
+
+## AP-002 Separation of Control Plane and Execution Plane
+Planning, governance, and policy are separated from agent execution and tool access.
+
+## AP-003 Zero Trust Security
+Every request is authenticated, authorized, and validated at each trust boundary.
+
+## AP-004 Delegated Identity Propagation
+User identity and authorization context are propagated through the stack as scoped, short-lived credentials.
+
+## AP-005 Policy as Code
+Policies are represented as versioned, testable, and auditable code artifacts.
+
+## AP-006 Observability by Design
+Telemetry, lineage, audit, and correlation are first-class architecture concerns.
+
+## AP-007 Security by Design
+Security controls are embedded in the platform baseline rather than added as an afterthought.
+
+## AP-008 Platform Independence
+Logical services remain vendor-neutral and framework-independent.
+
+## AP-009 OCI First Physical Architecture
+OCI is the reference physical implementation unless a customer requirement dictates otherwise.
+
+## AP-010 Contract First Integration
+Every interaction uses explicit contracts for execution, security, telemetry, and governance.
+
+## AP-011 Canonical Models First
+Shared platform entities are defined once and reused across services, schemas, and automation.
+
+## AP-012 Governance as a Cross-Cutting Domain
+Governance spans capabilities, models, prompts, policies, approvals, and lifecycle management.
+
+## AP-013 Deployment Automation as Code
+Platform deployment, configuration, and release orchestration are versioned and reproducible.
+
+## AP-014 Operational Excellence by Design
+Day-2 operability, incident response, backup, recovery, and supportability are designed in from the start.
+
+## AP-015 FinOps by Design
+The platform exposes cost, usage, and allocation signals so teams can manage spend and optimize capacity continuously.
