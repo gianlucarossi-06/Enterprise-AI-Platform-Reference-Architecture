@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReleaseManifest",
+  "type": "object",
+  "required": [
+    "version",
+    "releaseName",
+    "status",
+    "releasedOn"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "releaseName": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "candidate",
+        "released",
+        "maintenance"
+      ]
+    },
+    "releasedOn": {
+      "type": "string",
+      "format": "date"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "owners": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

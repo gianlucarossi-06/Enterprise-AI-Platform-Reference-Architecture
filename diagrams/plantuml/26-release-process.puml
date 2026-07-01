@@ -1,0 +1,12 @@
+@startuml
+title Release Process
+
+start
+:Validate architecture volumes;
+:Validate ADR index;
+:Validate schemas and diagrams;
+:Validate review checklists;
+:Generate release notes;
+:Tag repository as EARA v1.0.0;
+stop
+@enduml

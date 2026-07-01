@@ -12,6 +12,7 @@ This repository contains the working reference architecture for a secure, govern
 - `docs/06-Governance` - AI governance, lifecycle management, approvals, model and prompt governance
 - `docs/07-Implementation-Patterns` - orchestration, runtime, integration, and deployment automation patterns
 - `docs/08-Operations-and-Platform-Engineering` - day-2 operations, GitOps, CI/CD, resilience, SRE, FinOps
+- `docs/09-Architecture-Finalization` - review pack, traceability, terminology normalization, release notes
 - `adr` - architecture decision records
 - `schemas` - canonical JSON schemas
 - `diagrams/drawio` - editable diagrams
@@ -47,3 +48,4 @@ The kernel provides shared enterprise services and keeps orchestration logic sta
 ## Build
 
 This repo is docs-as-code. Use Markdown as the source of truth.
+

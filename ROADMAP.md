@@ -8,12 +8,14 @@
 - WP-5 Governance
 - WP-6 Enterprise Integration and Agent Runtime
 - WP-7 Canonical Models Publication
-
-## Current work package
 - WP-8 Operations and Platform Engineering
+- WP-9 Architecture Finalization and Review Pack
+
+## Current status
+- EARA v1.0 release candidate
 
 ## Next
-- WP-9 Architecture finalization and review pack
-- Executive deck outline
-- Reference deployment profiles expansion
-- Documentation packaging and release automation
+- Release automation and tagged publication
+- Maintenance backlog
+- Customer-specific overlays
+- Future enhancements and pattern extensions
