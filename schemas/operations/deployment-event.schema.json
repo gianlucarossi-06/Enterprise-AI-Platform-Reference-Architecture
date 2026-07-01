@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/operations/deployment-event.schema.json",
+  "title": "DeploymentEvent",
+  "type": "object",
+  "required": [
+    "eventId",
+    "timestamp",
+    "service",
+    "environment",
+    "status"
+  ],
+  "properties": {
+    "eventId": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "service": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "planned",
+        "approved",
+        "deployed",
+        "failed",
+        "rolled_back"
+      ]
+    },
+    "changeTicket": {
+      "type": "string"
+    },
+    "requestedBy": {
+      "type": "string"
+    },
+    "approvedBy": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

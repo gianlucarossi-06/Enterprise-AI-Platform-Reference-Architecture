@@ -1,0 +1,16 @@
+@startuml
+title GitOps Release Flow
+actor Engineer
+participant Git as "Git Repository"
+participant CI as "CI Pipeline"
+participant CD as "CD/Reconciler"
+participant OCI as "OCI Runtime"
+
+Engineer -> Git: commit change
+Git -> CI: trigger validation
+CI -> CI: test, scan, package
+CI -> CD: approve promotion
+CD -> OCI: apply desired state
+OCI --> CD: deployment status
+CD --> Git: record release metadata
+@enduml

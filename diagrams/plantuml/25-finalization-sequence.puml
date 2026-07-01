@@ -1,0 +1,15 @@
+@startuml
+title Architecture Finalization Sequence
+
+actor Architect
+participant "Review Pack" as RP
+participant "Traceability Matrix" as TM
+participant "Release Notes" as RN
+participant "Repository" as Repo
+
+Architect -> RP : Review volumes and ADRs
+RP -> TM : Validate principle-to-artifact mapping
+TM -> RN : Confirm release criteria
+Architect -> Repo : Approve release candidate
+Repo -> RN : Publish EARA v1.0.0 notes
+@enduml

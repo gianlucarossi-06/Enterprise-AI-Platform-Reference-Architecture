@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TraceabilityRecord",
+  "type": "object",
+  "required": [
+    "sourceType",
+    "sourceId",
+    "targetType",
+    "targetId"
+  ],
+  "properties": {
+    "sourceType": {
+      "type": "string"
+    },
+    "sourceId": {
+      "type": "string"
+    },
+    "targetType": {
+      "type": "string"
+    },
+    "targetId": {
+      "type": "string"
+    },
+    "relationship": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

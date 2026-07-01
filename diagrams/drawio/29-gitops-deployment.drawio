@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" modified="2026-07-01T00:00:00.000Z" agent="ChatGPT" version="24.7.7" type="device">
+  <diagram id="gitops-deployment" name="GitOps Deployment">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="2" value="Git Repository" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="180" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="OCI / OKE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" style="endArrow=block;html=1;strokeColor=#666666;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Reference architecture diagram for operations and platform engineering." style="text;html=1;strokeColor=none;fillColor=none;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="80" y="300" width="600" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

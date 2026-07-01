@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/operations/cost-allocation.schema.json",
+  "title": "CostAllocationRecord",
+  "type": "object",
+  "required": [
+    "allocationId",
+    "capability",
+    "period",
+    "amount"
+  ],
+  "properties": {
+    "allocationId": {
+      "type": "string"
+    },
+    "capability": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "chargebackOwner": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

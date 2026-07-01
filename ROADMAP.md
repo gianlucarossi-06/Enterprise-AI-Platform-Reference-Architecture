@@ -4,12 +4,18 @@
 - WP-1 Architecture Foundation
 - WP-2 Security Architecture
 - WP-3 OCI Reference Implementation
+- WP-4 Observability
+- WP-5 Governance
+- WP-6 Enterprise Integration and Agent Runtime
+- WP-7 Canonical Models Publication
+- WP-8 Operations and Platform Engineering
+- WP-9 Architecture Finalization and Review Pack
 
-## Current work package
-- WP-4 Observability and Governance
+## Current status
+- EARA v1.0 release candidate
 
 ## Next
-- Executive deck outline
-- Canonical models publication
-- Implementation patterns volume
-- Deployment automation references
+- Release automation and tagged publication
+- Maintenance backlog
+- Customer-specific overlays
+- Future enhancements and pattern extensions

@@ -1,0 +1,12 @@
+@startuml
+title Capacity and Cost Flow
+participant Telemetry
+participant CostModel
+participant Planner
+participant FinOps
+
+Telemetry -> CostModel: usage data
+CostModel -> Planner: forecast signals
+Planner -> FinOps: optimization recommendations
+FinOps -> Planner: budget constraints
+@enduml

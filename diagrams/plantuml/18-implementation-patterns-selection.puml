@@ -1,0 +1,18 @@
+@startuml
+title Implementation Pattern Selection
+start
+:Receive business request;
+if (Requires planning?) then (yes)
+  :Supervisor pattern;
+endif
+if (Requires async triggers?) then (yes)
+  :Event-driven pattern;
+endif
+if (Requires approval?) then (yes)
+  :Human-in-the-loop pattern;
+endif
+if (Long running?) then (yes)
+  :Long-running workflow pattern;
+endif
+stop
+@enduml

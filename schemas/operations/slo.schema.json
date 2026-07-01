@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/operations/slo.schema.json",
+  "title": "ServiceLevelObjective",
+  "type": "object",
+  "required": [
+    "sloId",
+    "service",
+    "metric",
+    "target",
+    "window"
+  ],
+  "properties": {
+    "sloId": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "window": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,29 +1,21 @@
 # Contributing
 
-This repository is maintained as a docs-as-code architecture asset.
+Please follow these conventions when contributing to the repository.
 
-## Working rules
+## General rules
+- Keep the logical architecture vendor-neutral.
+- Use Oracle-style solution document structure for volumes and chapters.
+- Prefer concise, action-oriented writing.
+- Keep diagrams editable (`drawio`, `plantuml`) and avoid image-only sources.
+- Introduce architectural changes through ADRs.
+- Update `README.md` and `ROADMAP.md` when scope changes.
 
-- Keep the logical architecture vendor neutral.
-- Use the canonical terminology defined in the architecture foundation.
-- Introduce new concepts through ADRs.
-- Keep diagrams editable.
-- Prefer small, reviewable changes.
-- Update the roadmap when a work package scope changes.
-
-## File conventions
-
-- Markdown for narrative content
-- Draw.io XML for architecture diagrams
-- PlantUML for sequence and flow diagrams
-- JSON Schema for canonical models
-- ADR Markdown for decision records
+## File naming
+- Use lower-case, hyphen-separated file names.
+- Prefix ADRs with zero-padded numbers when adding new records.
+- Keep schema files versionable and human-readable.
 
 ## Review expectations
-
-Every contribution should answer at least one of the following:
-- What does the platform do?
-- How is it secured?
-- How is it deployed?
-- How is it observed?
-- How is it governed?
+- Every new capability should describe purpose, inputs, outputs, and security implications.
+- Every operational pattern should describe deployment, monitoring, and recovery expectations.
+- Every OCI mapping should clearly separate logical intent from physical service choice.
