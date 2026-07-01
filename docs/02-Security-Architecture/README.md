@@ -1,3 +1,9 @@
-# Volume 2 - Security Architecture
+# Work Package 2 - Security Architecture
 
-This volume is the security reference architecture for the platform. It expands the foundation with delegated identity, authorization, token exchange, and resource protection.
+This volume defines authentication, authorization, identity propagation, token exchange, trust boundaries, and resource access control.
+
+## Related volumes
+
+- `docs/03-Canonical-Models` - shared identity, execution, and security entities
+- `docs/04-Observability` - telemetry and audit correlation
+- `docs/06-Governance` - approvals, lifecycle, and policy governance

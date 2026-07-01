@@ -1,0 +1,14 @@
+@startuml
+title Runbook and Incident Flow
+actor Operator
+participant Alert
+participant Runbook
+participant Service
+participant Audit
+
+Alert -> Operator: notify incident
+Operator -> Runbook: open remediation steps
+Operator -> Service: execute corrective action
+Service --> Operator: status
+Operator -> Audit: record action and outcome
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+title Backup and Recovery Flow
+participant BackupPolicy
+participant BackupStore
+participant RecoveryTeam
+participant PlatformState
+
+BackupPolicy -> BackupStore: schedule backup
+BackupStore -> PlatformState: capture snapshot
+RecoveryTeam -> BackupStore: request restore
+BackupStore -> PlatformState: restore state
+PlatformState --> RecoveryTeam: recovery confirmed
+@enduml

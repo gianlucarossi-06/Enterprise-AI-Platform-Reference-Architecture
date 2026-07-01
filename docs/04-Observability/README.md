@@ -1,14 +1,9 @@
-# Volume 4 - Observability
+# Work Package 4 - Observability
 
 This volume defines how telemetry is collected, normalized, correlated, stored, and visualized across the multi-agent AI platform.
 
-## Sections
+## Related volumes
 
-- Executive summary
-- Observability principles
-- Observability model
-- Telemetry and correlation
-- Logging, tracing, metrics
-- Alerting and detection
-- OCI mapping
-- Observability ADRs
+- `docs/03-Canonical-Models` - telemetry, audit, and execution entities
+- `docs/06-Governance` - governance evidence and audit relationships
+- `docs/07-Implementation-Patterns` - observability-aware delivery patterns

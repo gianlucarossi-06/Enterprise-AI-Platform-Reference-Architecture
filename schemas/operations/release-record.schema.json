@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/operations/release-record.schema.json",
+  "title": "ReleaseRecord",
+  "type": "object",
+  "required": [
+    "releaseId",
+    "service",
+    "version",
+    "targetEnvironment",
+    "timestamp"
+  ],
+  "properties": {
+    "releaseId": {
+      "type": "string"
+    },
+    "service": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "targetEnvironment": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "promotionState": {
+      "type": "string"
+    },
+    "artifactDigest": {
+      "type": "string"
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
