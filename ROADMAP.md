@@ -15,3 +15,5 @@
 - WP-8 Implementation Patterns
 - Executive deck outline
 - Deployment automation references
+- Executive deck outline
+- Reference deployment profiles expansion

@@ -4,7 +4,7 @@ This volume establishes the canonical logical architecture for the Enterprise AI
 
 ## Purpose
 
-Define the platform mission, reference model, architectural principles, logical services, and canonical contracts that will be used by the security, governance, observability, and OCI implementation volumes.
+Define the platform mission, reference model, architectural principles, logical services, and canonical contracts that will be used by the security, canonical models, observability, governance, OCI implementation, and implementation patterns volumes.
 
 ## Sections
 
